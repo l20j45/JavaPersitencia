@@ -3,6 +3,8 @@ package l20j45.platzi;
 public class Message {
     String autor_mensaje, fecha_mensaje, id_mensaje, mensaje;
 
+
+
     public String getAutor_mensaje() {
         return autor_mensaje;
     }
@@ -45,7 +47,16 @@ public class Message {
         this.mensaje = mensaje;
     }
 
+    public Message( String mensaje ,String autor_mensaje) {
+        this.mensaje = mensaje;
+        this.autor_mensaje = autor_mensaje;
+    }
+
     public Message() {
     }
 
+    @Override
+    public String toString() {
+        return "mensaje: "+getMensaje()+" autor: "+ getAutor_mensaje();
+    }
 }

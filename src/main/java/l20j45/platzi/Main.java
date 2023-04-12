@@ -1,20 +1,18 @@
 package l20j45.platzi;
 
-import com.mysql.cj.protocol.MessageSender;
-
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Conexion conexion = new Conexion();
+        Conection conection = new Conection();
 
         Scanner sc = new Scanner(System.in);
 
         int option = 0;
 
-        try (Connection cnx = conexion.get_connection()) {
+        try (Connection cnx = Conection.getConnection()) {
 
             do {
                 System.out.println("---------------------");
