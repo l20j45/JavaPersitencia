@@ -1,4 +1,4 @@
-package l20j45.platzi;
+package l20j45.platzi.model;
 
 public class Message {
     String autor_mensaje, fecha_mensaje, id_mensaje, mensaje;
@@ -40,7 +40,7 @@ public class Message {
 
     //Constructors
 
-    public Message(String autor_mensaje, String fecha_mensaje, String id_mensaje, String mensaje) {
+    public Message( String id_mensaje, String mensaje,String autor_mensaje, String fecha_mensaje) {
         this.autor_mensaje = autor_mensaje;
         this.fecha_mensaje = fecha_mensaje;
         this.id_mensaje = id_mensaje;

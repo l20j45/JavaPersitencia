@@ -1,5 +1,7 @@
 package l20j45.platzi;
 
+import l20j45.platzi.service.MessageService;
+
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Scanner;
